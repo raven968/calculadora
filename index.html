@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link type="text/css" rel="stylesheet" href="estiloindex.css">
+    <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="titulo">Calculadora</h1>
+  </div>
+    <button type="button" class="bot-sen" id="sencilla">
+      <img src="sencilla.png" class="img-sen" onmouseover="sobre()" onmouseout="fuera()" id="img1"> Sencilla
+    </button>
+    <input type="button" id="d" value="Doble">
+    <button type="button" class="bot-dob" id="doble">
+      <img src="sencilla.png" class="img-dob">
+    </button>
+    <input type="button" id="conpapas" value="Con Papas">
+    <input type="button" id="reset" value="Clear">
+    <div id="resultado" class="r1">
+      <p>Total</p><p id="p1">0.00</p>
+    </div>
+    <div class="pedido" id="pedido">
+      <p id="slot1">0</p> <p id="ped1"></p>
+      <p id="ped2"></p>
+      <p id="ped3"></p>
+    </div>
+
+    <script type="text/javascript" src="calculadora.js">
+    </script>
+    <script language="javascript">
+      function sobre(){
+      document.getElementById("img1").src="sencilla1.png";
+      }
+      function fuera(){
+      document.getElementById("img1").src="sencilla.png";
+      }
+    </script>
+  </body>
+</html>
