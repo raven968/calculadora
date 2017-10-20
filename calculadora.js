@@ -11,17 +11,12 @@ b_papas.addEventListener('click', s3);
 b_clear.addEventListener('click', s4)
 var total;
 
-
-
-
 function s1()
 {
   var par1 = document.getElementById('p1').innerHTML;
   total = h_sencilla + parseInt(par1);
   document.getElementById('p1').innerHTML= total;
   document.getElementById('ped1').innerHTML=" Hambuerguesa Sencilla";
-
-
 
 }
 
@@ -45,4 +40,23 @@ function s4()
   var par2 = document.getElementById('p1').innerHTML;
   total = "0.00";
   document.getElementById('p1').innerHTML= total;
+}
+
+//Funciones para el cambio de imagenes en los botones
+function sobre()
+{
+  document.getElementById('img1').src = "sencilla1.png";
+}
+function salir()
+{
+  document.getElementById('img1').src = "sencilla.png";
+}
+
+function sobre1()
+{
+  document.getElementById('img2').src = "sencilla1.png";
+}
+function salir1()
+{
+  document.getElementById('img2').src = "sencilla.png";
 }

@@ -52,6 +52,27 @@ body {
   height: 20px;
 }
 
+.bot-dob {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 5px;
+  border: 1px solid #0016b0;
+  padding: 10px;
+}
+
+.bot-dob:hover {
+  color: #8FBAF3;
+  background-color: #BDF1F6;
+}
+
+.img-dob {
+  width: 20px;
+  height: 20px;
+}
+
 .r1 {
   height: 60px;
   width: auto;

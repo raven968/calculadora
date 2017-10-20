@@ -10,14 +10,15 @@
     <div class="container">
       <h1 class="titulo">Calculadora</h1>
   </div>
-    <button type="button" class="bot-sen" id="sencilla">
-      <img src="sencilla.png" class="img-sen" onmouseover="sobre()" onmouseout="fuera()" id="img1"> Sencilla
+    <button type="button" class="bot-sen" id="sencilla" onmouseover="sobre();" onmouseout="salir();">
+      <img src="sencilla.png" class="img-sen" id="img1"> Sencilla
     </button>
-    <input type="button" id="d" value="Doble">
-    <button type="button" class="bot-dob" id="doble">
-      <img src="sencilla.png" class="img-dob">
+    <button type="button" class="bot-dob" id="doble" onmouseover="sobre1();" onmouseout="salir1();">
+      <img src="sencilla.png" class="img-dob" id="img2"> Doble
     </button>
-    <input type="button" id="conpapas" value="Con Papas">
+    <button type="button" id="conpapas" class="bot_papa" onmouseover="sobre2();" onmouseout="salir2();">
+      <img src="patatas-fritas.png" class="img-papa" id="img3">
+    </button>
     <input type="button" id="reset" value="Clear">
     <div id="resultado" class="r1">
       <p>Total</p><p id="p1">0.00</p>
@@ -30,13 +31,6 @@
 
     <script type="text/javascript" src="calculadora.js">
     </script>
-    <script language="javascript">
-      function sobre(){
-      document.getElementById("img1").src="sencilla1.png";
-      }
-      function fuera(){
-      document.getElementById("img1").src="sencilla.png";
-      }
-    </script>
+
   </body>
 </html>
